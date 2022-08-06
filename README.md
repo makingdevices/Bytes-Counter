@@ -192,13 +192,14 @@ Distributed under the GPLv3 License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Making Devices - [@MakingDevices](https://www.instagram.com/makingdevices/)
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/makingdevices/Bytes-Counter](https://github.com/makingdevices/Bytes-Counter)
+
+Other Links: [LinkTree](https://makingdevices.com/links/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
@@ -206,6 +207,15 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 * []()
 * []()
 * []()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Sponsor -->
+## Sponsor
+
+PCBWay is the most professional PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, They are committed to meeting the needs of their customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As Sponsor of Making Devices, they will be in charge of all the PCBs for MDV, allowing both of us to grow together in a long term partnership. We hope our visitors enjoy the high-quality PCBs and take them into account for your both personal and professional prototypes or products.
+
+[![Sponsor Shot][sponsor-screenshot]](sponsor-url)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -227,6 +237,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-url]: https://www.linkedin.com/company/making-devices/
 [sponsor-shield]: https://img.shields.io/badge/SPONSOR-PCBWAY-black.svg?style=for-the-badge&colorB=1200
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
+[sponsor-screenshot]: /images/PCB_sponsor.png
 [product-screenshot]: images/screenshot.jpg
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
