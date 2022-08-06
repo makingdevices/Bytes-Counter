@@ -111,7 +111,7 @@ To get a local copy up and running follow these simple example steps.
 ### Build one
 
 1. Get the gerber files for the latest version: [V1](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Gerber/BytesCounterV1.zip) 
-2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY]([sponsor-url]) )
+2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url] )
 3. Buy all the components from the [Bill Of Materials](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/BytesCounter_BOM.xlsx)
 4. Solder everything
 5. Burn the [latest firmware](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Simulation/Bytes_Counter.hex)
