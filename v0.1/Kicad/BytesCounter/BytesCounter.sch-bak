@@ -1,0 +1,850 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Bytes Counter"
+Date "2021-07-19"
+Rev "v0.1a"
+Comp "Making Devices"
+Comment1 "https://makingdevices.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:CH075-2032 U2
+U 1 1 60DB9412
+P 6750 2100
+F 0 "U2" H 7378 2096 50  0000 L CNN
+F 1 "CH075-2032" H 7378 2005 50  0000 L CNN
+F 2 "CH0752032" H 7400 2200 50  0001 L CNN
+F 3 "" H 7400 2100 50  0001 L CNN
+F 4 "RS Pro Battery Holder" H 7400 2000 50  0001 L CNN "Description"
+F 5 "6.6" H 7400 1900 50  0001 L CNN "Height"
+F 6 "" H 7400 1800 50  0001 L CNN "RS Part Number"
+F 7 "" H 7400 1700 50  0001 L CNN "RS Price/Stock"
+F 8 "RS Components" H 7400 1600 50  0001 L CNN "Manufacturer_Name"
+F 9 "CH075-2032" H 7400 1500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:CC56-12EWA U1
+U 1 1 60DC2570
+P 2950 4450
+F 0 "U1" H 2950 5117 50  0000 C CNN
+F 1 "CC56-12EWA" H 2950 5026 50  0000 C CNN
+F 2 "Display_7Segment:CA56-12EWA" H 2950 3850 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/CA56-12EWA.pdf" H 2520 4480 50  0001 C CNN
+	1    2950 4450
+	1    0    0    -1  
+$EndComp
+Text GLabel 6750 2100 0    50   Input ~ 0
++3V
+Text GLabel 6750 2200 0    50   Input ~ 0
+gnd
+Text GLabel 1650 1500 0    50   Input ~ 0
++3V
+Text GLabel 5350 1500 2    50   Input ~ 0
+gnd
+$Comp
+L HVolt_sub-system-FIT:B3F-4050-SamacSys_Parts S2
+U 1 1 60DC6119
+P 8900 5250
+F 0 "S2" H 9300 5515 50  0000 C CNN
+F 1 "B3F-4050-SamacSys_Parts" H 9300 5424 50  0000 C CNN
+F 2 "B3F-4000" H 9550 5350 50  0001 L CNN
+F 3 "https://www.omron.com/ecb/products/pdf/en-b3f.pdf" H 9550 5250 50  0001 L CNN
+F 4 "lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 3mm" H 9550 5150 50  0001 L CNN "Description"
+F 5 "Omron Electronics" H 9550 4950 50  0001 L CNN "Manufacturer_Name"
+F 6 "B3F-4050" H 9550 4850 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "653-B3F-4050" H 9550 4750 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-B3F-4050" H 9550 4650 50  0001 L CNN "Mouser Price/Stock"
+F 9 "6866768P" H 9550 4550 50  0001 L CNN "RS Part Number"
+F 10 "http://uk.rs-online.com/web/p/products/6866768P" H 9550 4450 50  0001 L CNN "RS Price/Stock"
+	1    8900 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SMMBT5551LT1G Q3
+U 1 1 60DC98DF
+P 3400 6350
+F 0 "Q3" H 3938 6396 50  0000 L CNN
+F 1 "SMMBT5551LT1G" H 3938 6305 50  0000 L CNN
+F 2 "SOT96P237X111-3N" H 3950 6200 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/1841498P" H 3950 6100 50  0001 L CNN
+F 4 "NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23" H 3950 6000 50  0001 L CNN "Description"
+F 5 "1.11" H 3950 5900 50  0001 L CNN "Height"
+F 6 "1841498P" H 3950 5800 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/1841498P" H 3950 5700 50  0001 L CNN "RS Price/Stock"
+F 8 "ON Semiconductor" H 3950 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "SMMBT5551LT1G" H 3950 5500 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70300580" H 3950 5400 50  0001 L CNN "Allied_Number"
+	1    3400 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SMMBT5551LT1G Q2
+U 1 1 60DCAC0C
+P 2100 6350
+F 0 "Q2" H 2638 6396 50  0000 L CNN
+F 1 "SMMBT5551LT1G" H 2638 6305 50  0000 L CNN
+F 2 "SOT96P237X111-3N" H 2650 6200 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/1841498P" H 2650 6100 50  0001 L CNN
+F 4 "NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23" H 2650 6000 50  0001 L CNN "Description"
+F 5 "1.11" H 2650 5900 50  0001 L CNN "Height"
+F 6 "1841498P" H 2650 5800 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/1841498P" H 2650 5700 50  0001 L CNN "RS Price/Stock"
+F 8 "ON Semiconductor" H 2650 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "SMMBT5551LT1G" H 2650 5500 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70300580" H 2650 5400 50  0001 L CNN "Allied_Number"
+	1    2100 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SMMBT5551LT1G Q4
+U 1 1 60DCE445
+P 4500 6350
+F 0 "Q4" H 5038 6396 50  0000 L CNN
+F 1 "SMMBT5551LT1G" H 5038 6305 50  0000 L CNN
+F 2 "SOT96P237X111-3N" H 5050 6200 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/1841498P" H 5050 6100 50  0001 L CNN
+F 4 "NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23" H 5050 6000 50  0001 L CNN "Description"
+F 5 "1.11" H 5050 5900 50  0001 L CNN "Height"
+F 6 "1841498P" H 5050 5800 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/1841498P" H 5050 5700 50  0001 L CNN "RS Price/Stock"
+F 8 "ON Semiconductor" H 5050 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "SMMBT5551LT1G" H 5050 5500 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70300580" H 5050 5400 50  0001 L CNN "Allied_Number"
+	1    4500 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:SMMBT5551LT1G Q1
+U 1 1 60DD0B4E
+P 1000 6350
+F 0 "Q1" H 1538 6396 50  0000 L CNN
+F 1 "SMMBT5551LT1G" H 1538 6305 50  0000 L CNN
+F 2 "SOT96P237X111-3N" H 1550 6200 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/1841498P" H 1550 6100 50  0001 L CNN
+F 4 "NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23" H 1550 6000 50  0001 L CNN "Description"
+F 5 "1.11" H 1550 5900 50  0001 L CNN "Height"
+F 6 "1841498P" H 1550 5800 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/1841498P" H 1550 5700 50  0001 L CNN "RS Price/Stock"
+F 8 "ON Semiconductor" H 1550 5600 50  0001 L CNN "Manufacturer_Name"
+F 9 "SMMBT5551LT1G" H 1550 5500 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70300580" H 1550 5400 50  0001 L CNN "Allied_Number"
+	1    1000 6350
+	1    0    0    -1  
+$EndComp
+Text Label 4050 4550 0    50   ~ 0
+CC_1
+Text Label 4050 4650 0    50   ~ 0
+CC_2
+Text Label 4050 4750 0    50   ~ 0
+CC_3
+Text Label 4050 4850 0    50   ~ 0
+CC_4
+Text Label 1850 4150 2    50   ~ 0
+D_a
+Text Label 1850 4250 2    50   ~ 0
+D_b
+Text Label 1850 4350 2    50   ~ 0
+D_c
+Text Label 1850 4450 2    50   ~ 0
+D_d
+Text Label 1850 4550 2    50   ~ 0
+D_e
+Text Label 1850 4650 2    50   ~ 0
+D_f
+Text Label 1850 4750 2    50   ~ 0
+D_g
+Text Label 1850 4850 2    50   ~ 0
+D_dp
+Text Label 5250 1900 0    50   ~ 0
+D_a
+Text Label 5250 2000 0    50   ~ 0
+D_b
+Text Label 5250 2100 0    50   ~ 0
+D_c
+Text Label 1750 2100 2    50   ~ 0
+D_d
+Text Label 1750 2000 2    50   ~ 0
+D_e
+Text Label 1750 1900 2    50   ~ 0
+D_f
+Text Label 1750 2200 2    50   ~ 0
+D_g
+Text Label 1750 2300 2    50   ~ 0
+D_dp
+$Comp
+L SamacSys_Parts:TMB12A05 LS1
+U 1 1 60DBA64E
+P 9950 2950
+F 0 "LS1" H 10578 2946 50  0000 L CNN
+F 1 "TMB12A05" H 10578 2855 50  0000 L CNN
+F 2 "TMB12A05" H 10600 3050 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Jiangsu-Huaneng-Elec-TMB12A05_C96093.pdf" H 10600 2950 50  0001 L CNN
+F 4 "12*9.5 Buzzers RoHS" H 10600 2850 50  0001 L CNN "Description"
+F 5 "9.5" H 10600 2750 50  0001 L CNN "Height"
+F 6 "" H 10600 2650 50  0001 L CNN "RS Part Number"
+F 7 "" H 10600 2550 50  0001 L CNN "RS Price/Stock"
+F 8 "Jiangsu Huaneng Elec" H 10600 2450 50  0001 L CNN "Manufacturer_Name"
+F 9 "TMB12A05" H 10600 2350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9950 2950
+	-1   0    0    1   
+$EndComp
+Text Notes 6900 1950 0    50   ~ 0
+Battery holder
+Text Notes 9750 2700 2    50   ~ 0
+Buzzer
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R4
+U 1 1 60DBCD60
+P 1400 6000
+F 0 "R4" H 1750 6225 50  0000 C CNN
+F 1 "220" H 1750 6134 50  0000 C CNN
+F 2 "RESC2012X65N" H 1950 6050 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 1950 5950 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 1950 5850 50  0001 L CNN "Description"
+F 5 "0.65" H 1950 5750 50  0001 L CNN "Height"
+F 6 "" H 1950 5650 50  0001 L CNN "RS Part Number"
+F 7 "" H 1950 5550 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 1950 5450 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 1950 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1400 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R6
+U 1 1 60DBE8C7
+P 2500 6000
+F 0 "R6" H 2850 6225 50  0000 C CNN
+F 1 "220" H 2850 6134 50  0000 C CNN
+F 2 "RESC2012X65N" H 3050 6050 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 3050 5950 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 3050 5850 50  0001 L CNN "Description"
+F 5 "0.65" H 3050 5750 50  0001 L CNN "Height"
+F 6 "" H 3050 5650 50  0001 L CNN "RS Part Number"
+F 7 "" H 3050 5550 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 3050 5450 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 3050 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2500 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R8
+U 1 1 60DBF47D
+P 3800 6000
+F 0 "R8" H 4150 6225 50  0000 C CNN
+F 1 "220" H 4150 6134 50  0000 C CNN
+F 2 "RESC2012X65N" H 4350 6050 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 4350 5950 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 4350 5850 50  0001 L CNN "Description"
+F 5 "0.65" H 4350 5750 50  0001 L CNN "Height"
+F 6 "" H 4350 5650 50  0001 L CNN "RS Part Number"
+F 7 "" H 4350 5550 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 4350 5450 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 4350 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3800 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R10
+U 1 1 60DBFF96
+P 4900 6000
+F 0 "R10" H 5250 6225 50  0000 C CNN
+F 1 "220" H 5250 6134 50  0000 C CNN
+F 2 "RESC2012X65N" H 5450 6050 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 5450 5950 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 5450 5850 50  0001 L CNN "Description"
+F 5 "0.65" H 5450 5750 50  0001 L CNN "Height"
+F 6 "" H 5450 5650 50  0001 L CNN "RS Part Number"
+F 7 "" H 5450 5550 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 5450 5450 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 5450 5350 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4900 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R9
+U 1 1 60DC0C22
+P 4450 5600
+F 0 "R9" V 4754 5688 50  0000 L CNN
+F 1 "4k7" V 4845 5688 50  0000 L CNN
+F 2 "RESC2012X65N" H 5000 5650 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 5000 5550 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 5000 5450 50  0001 L CNN "Description"
+F 5 "0.65" H 5000 5350 50  0001 L CNN "Height"
+F 6 "" H 5000 5250 50  0001 L CNN "RS Part Number"
+F 7 "" H 5000 5150 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 5000 5050 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 5000 4950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4450 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R7
+U 1 1 60DC1BE9
+P 3350 5600
+F 0 "R7" V 3654 5688 50  0000 L CNN
+F 1 "4k7" V 3745 5688 50  0000 L CNN
+F 2 "RESC2012X65N" H 3900 5650 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 3900 5550 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 3900 5450 50  0001 L CNN "Description"
+F 5 "0.65" H 3900 5350 50  0001 L CNN "Height"
+F 6 "" H 3900 5250 50  0001 L CNN "RS Part Number"
+F 7 "" H 3900 5150 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 3900 5050 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 3900 4950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3350 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R5
+U 1 1 60DC267B
+P 2050 5600
+F 0 "R5" V 2354 5688 50  0000 L CNN
+F 1 "4k7" V 2445 5688 50  0000 L CNN
+F 2 "RESC2012X65N" H 2600 5650 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 2600 5550 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 2600 5450 50  0001 L CNN "Description"
+F 5 "0.65" H 2600 5350 50  0001 L CNN "Height"
+F 6 "" H 2600 5250 50  0001 L CNN "RS Part Number"
+F 7 "" H 2600 5150 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 2600 5050 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 2600 4950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2050 5600
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R1
+U 1 1 60DC3869
+P 950 5600
+F 0 "R1" V 1254 5688 50  0000 L CNN
+F 1 "4k7" V 1345 5688 50  0000 L CNN
+F 2 "RESC2012X65N" H 1500 5650 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 1500 5550 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 1500 5450 50  0001 L CNN "Description"
+F 5 "0.65" H 1500 5350 50  0001 L CNN "Height"
+F 6 "" H 1500 5250 50  0001 L CNN "RS Part Number"
+F 7 "" H 1500 5150 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 1500 5050 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 1500 4950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    950  5600
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R2
+U 1 1 60DC4A25
+P 1100 1100
+F 0 "R2" V 1404 1188 50  0000 L CNN
+F 1 "10k" V 1495 1188 50  0000 L CNN
+F 2 "RESC2012X65N" H 1650 1150 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 1650 1050 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 1650 950 50  0001 L CNN "Description"
+F 5 "0.65" H 1650 850 50  0001 L CNN "Height"
+F 6 "" H 1650 750 50  0001 L CNN "RS Part Number"
+F 7 "" H 1650 650 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 1650 550 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 1650 450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1100 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R15
+U 1 1 60DC654E
+P 10000 5250
+F 0 "R15" H 10350 5475 50  0000 C CNN
+F 1 "10k" H 10350 5384 50  0000 C CNN
+F 2 "RESC2012X65N" H 10550 5300 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 10550 5200 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 10550 5100 50  0001 L CNN "Description"
+F 5 "0.65" H 10550 5000 50  0001 L CNN "Height"
+F 6 "" H 10550 4900 50  0001 L CNN "RS Part Number"
+F 7 "" H 10550 4800 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 10550 4700 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 10550 4600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10000 5250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R16
+U 1 1 60DC8FE3
+P 10050 5300
+F 0 "R16" H 10400 5525 50  0000 C CNN
+F 1 "10k" H 10400 5434 50  0000 C CNN
+F 2 "RESC2012X65N" H 10600 5350 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 10600 5250 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 10600 5150 50  0001 L CNN "Description"
+F 5 "0.65" H 10600 5050 50  0001 L CNN "Height"
+F 6 "" H 10600 4950 50  0001 L CNN "RS Part Number"
+F 7 "" H 10600 4850 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 10600 4750 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 10600 4650 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GCG21BR71H154KA01K C1
+U 1 1 60DC9FA1
+P 3250 1100
+F 0 "C1" H 3500 1365 50  0000 C CNN
+F 1 "100nF" H 3500 1274 50  0000 C CNN
+F 2 "CAPC2012X145N" H 3600 1150 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCG21BR71H154KA01%23.html" H 3600 1050 50  0001 L CNN
+F 4 "Capacitor L=2.0mm W=1.25mm T=1.25mm" H 3600 950 50  0001 L CNN "Description"
+F 5 "1.45" H 3600 850 50  0001 L CNN "Height"
+F 6 "" H 3600 750 50  0001 L CNN "RS Part Number"
+F 7 "" H 3600 650 50  0001 L CNN "RS Price/Stock"
+F 8 "Murata Electronics" H 3600 550 50  0001 L CNN "Manufacturer_Name"
+F 9 "GCG21BR71H154KA01K" H 3600 450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GCG21BR71H154KA01K C3
+U 1 1 60DCC146
+P 10550 5650
+F 0 "C3" H 10800 5915 50  0000 C CNN
+F 1 "100nF" H 10800 5824 50  0000 C CNN
+F 2 "CAPC2012X145N" H 10900 5700 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCG21BR71H154KA01%23.html" H 10900 5600 50  0001 L CNN
+F 4 "Capacitor L=2.0mm W=1.25mm T=1.25mm" H 10900 5500 50  0001 L CNN "Description"
+F 5 "1.45" H 10900 5400 50  0001 L CNN "Height"
+F 6 "" H 10900 5300 50  0001 L CNN "RS Part Number"
+F 7 "" H 10900 5200 50  0001 L CNN "RS Price/Stock"
+F 8 "Murata Electronics" H 10900 5100 50  0001 L CNN "Manufacturer_Name"
+F 9 "GCG21BR71H154KA01K" H 10900 5000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10550 5650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1000 6350 950  6350
+Wire Wire Line
+	950  6350 950  6300
+Wire Wire Line
+	2100 6350 2050 6350
+Wire Wire Line
+	2050 6350 2050 6300
+Wire Wire Line
+	3400 6350 3350 6350
+Wire Wire Line
+	3350 6350 3350 6300
+Wire Wire Line
+	4500 6350 4450 6350
+Wire Wire Line
+	4450 6350 4450 6300
+Wire Wire Line
+	4900 6050 4900 6000
+Wire Wire Line
+	3800 6050 3800 6000
+Wire Wire Line
+	2500 6050 2500 6000
+Wire Wire Line
+	1400 6050 1400 6000
+Wire Wire Line
+	1400 6650 1400 6800
+Wire Wire Line
+	1400 6800 2500 6800
+Wire Wire Line
+	4900 6800 4900 6650
+Wire Wire Line
+	3800 6650 3800 6800
+Connection ~ 3800 6800
+Wire Wire Line
+	3800 6800 4900 6800
+Wire Wire Line
+	2500 6650 2500 6800
+Connection ~ 2500 6800
+Wire Wire Line
+	2500 6800 3800 6800
+Text GLabel 4900 6800 2    50   Input ~ 0
+gnd
+Text Label 1400 5300 1    50   ~ 0
+CC_1
+Text Label 2500 5300 1    50   ~ 0
+CC_2
+Text Label 3800 5300 1    50   ~ 0
+CC_3
+Text Label 4900 5300 1    50   ~ 0
+CC_4
+Wire Wire Line
+	9600 2500 9550 2500
+Wire Wire Line
+	9550 2500 9550 2450
+Wire Wire Line
+	10000 2800 10000 2850
+Wire Wire Line
+	10000 2850 9950 2850
+Text GLabel 9950 2950 2    50   Input ~ 0
+gnd
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R13
+U 1 1 60DCE13B
+P 9550 1750
+F 0 "R13" V 9854 1838 50  0000 L CNN
+F 1 "4k7" V 9945 1838 50  0000 L CNN
+F 2 "RESC2012X65N" H 10100 1800 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 10100 1700 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 10100 1600 50  0001 L CNN "Description"
+F 5 "0.65" H 10100 1500 50  0001 L CNN "Height"
+F 6 "" H 10100 1400 50  0001 L CNN "RS Part Number"
+F 7 "" H 10100 1300 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 10100 1200 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 10100 1100 50  0001 L CNN "Manufacturer_Part_Number"
+	1    9550 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:SMMBT5551LT1G Q5
+U 1 1 60DCD8FE
+P 9600 2500
+F 0 "Q5" H 10138 2546 50  0000 L CNN
+F 1 "SMMBT5551LT1G" H 10138 2455 50  0000 L CNN
+F 2 "SOT96P237X111-3N" H 10150 2350 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/1841498P" H 10150 2250 50  0001 L CNN
+F 4 "NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23" H 10150 2150 50  0001 L CNN "Description"
+F 5 "1.11" H 10150 2050 50  0001 L CNN "Height"
+F 6 "1841498P" H 10150 1950 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/1841498P" H 10150 1850 50  0001 L CNN "RS Price/Stock"
+F 8 "ON Semiconductor" H 10150 1750 50  0001 L CNN "Manufacturer_Name"
+F 9 "SMMBT5551LT1G" H 10150 1650 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70300580" H 10150 1550 50  0001 L CNN "Allied_Number"
+	1    9600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R14
+U 1 1 60DE4973
+P 10000 1450
+F 0 "R14" V 10304 1538 50  0000 L CNN
+F 1 "220" V 10395 1538 50  0000 L CNN
+F 2 "RESC2012X65N" H 10550 1500 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 10550 1400 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 10550 1300 50  0001 L CNN "Description"
+F 5 "0.65" H 10550 1200 50  0001 L CNN "Height"
+F 6 "" H 10550 1100 50  0001 L CNN "RS Part Number"
+F 7 "" H 10550 1000 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 10550 900 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 10550 800 50  0001 L CNN "Manufacturer_Part_Number"
+	1    10000 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10000 2200 10000 2150
+Text GLabel 10000 1450 1    50   Input ~ 0
++3V
+Text Label 9550 1750 1    50   ~ 0
+C_Buzzer
+Text Label 1750 1600 2    50   ~ 0
+C_Buzzer
+Text GLabel 1100 1100 0    50   Input ~ 0
++3V
+Wire Wire Line
+	1100 1800 1200 1800
+Wire Wire Line
+	1650 1500 1700 1500
+Wire Wire Line
+	5350 1500 5300 1500
+Wire Wire Line
+	5300 1500 5300 1100
+Wire Wire Line
+	5300 1100 3750 1100
+Connection ~ 5300 1500
+Wire Wire Line
+	5300 1500 5250 1500
+Wire Wire Line
+	3250 1100 1700 1100
+Wire Wire Line
+	1700 1100 1700 1500
+Connection ~ 1700 1500
+Wire Wire Line
+	1700 1500 1750 1500
+$Comp
+L SamacSys_Parts:PIC18LF14K50-I_SO IC1
+U 1 1 60DB5C9B
+P 1750 1500
+F 0 "IC1" H 3500 1765 50  0000 C CNN
+F 1 "PIC18LF14K50-I_SO" H 3500 1674 50  0000 C CNN
+F 2 "SOIC127P1030X265-20N" H 5100 1600 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/6669239P" H 5100 1500 50  0001 L CNN
+F 4 "MCU 16K Flash 768 RAM USB 2.0 SOIC20" H 5100 1400 50  0001 L CNN "Description"
+F 5 "2.65" H 5100 1300 50  0001 L CNN "Height"
+F 6 "6669239P" H 5100 1200 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/6669239P" H 5100 1100 50  0001 L CNN "RS Price/Stock"
+F 8 "Microchip" H 5100 1000 50  0001 L CNN "Manufacturer_Name"
+F 9 "PIC18LF14K50-I/SO" H 5100 900 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "70047097" H 5100 800 50  0001 L CNN "Allied_Number"
+	1    1750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R3
+U 1 1 60DED7F7
+P 1300 1900
+F 0 "R3" V 1604 1988 50  0000 L CNN
+F 1 "220" V 1695 1988 50  0000 L CNN
+F 2 "RESC2012X65N" H 1850 1950 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 1850 1850 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 1850 1750 50  0001 L CNN "Description"
+F 5 "0.65" H 1850 1650 50  0001 L CNN "Height"
+F 6 "" H 1850 1550 50  0001 L CNN "RS Part Number"
+F 7 "" H 1850 1450 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 1850 1350 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 1850 1250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1300 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 1700 1300 1700
+Wire Wire Line
+	1300 1700 1300 1900
+$Comp
+L SamacSys_Parts:LTST-C171GKT LED1
+U 1 1 60DEF1BB
+P 1300 3300
+F 0 "LED1" V 1646 3172 50  0000 R CNN
+F 1 "LTST-C171GKT" V 1555 3172 50  0000 R CNN
+F 2 "LEDC2012X90N" H 1800 3450 50  0001 L BNN
+F 3 "http://uk.rs-online.com/web/p/products/6920935P" H 1800 3350 50  0001 L BNN
+F 4 "Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package" H 1800 3250 50  0001 L BNN "Description"
+F 5 "0.9" H 1800 3150 50  0001 L BNN "Height"
+F 6 "6920935P" H 1800 3050 50  0001 L BNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/6920935P" H 1800 2950 50  0001 L BNN "RS Price/Stock"
+F 8 "Lite-On" H 1800 2850 50  0001 L BNN "Manufacturer_Name"
+F 9 "LTST-C171GKT" H 1800 2750 50  0001 L BNN "Manufacturer_Part_Number"
+	1    1300 3300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1350 3350 2    50   Input ~ 0
+gnd
+Wire Wire Line
+	1350 3350 1300 3350
+Wire Wire Line
+	1300 3350 1300 3300
+Wire Wire Line
+	1300 2700 1300 2600
+Text Label 950  5600 1    50   ~ 0
+C_1
+Text Label 2050 5600 1    50   ~ 0
+C_2
+Text Label 3350 5600 1    50   ~ 0
+C_3
+Text Label 4450 5600 1    50   ~ 0
+C_4
+Text Label 5250 2200 0    50   ~ 0
+C_1
+Text Label 5250 2300 0    50   ~ 0
+C_2
+Text Label 5250 2400 0    50   ~ 0
+C_3
+Text Label 1750 2400 2    50   ~ 0
+C_4
+NoConn ~ 5250 1800
+Text Label 5250 1600 0    50   ~ 0
+B_1
+Text Label 5250 1700 0    50   ~ 0
+B_2
+Wire Wire Line
+	9700 5350 9700 5300
+Text GLabel 8700 5300 0    50   Input ~ 0
+gnd
+Wire Wire Line
+	8900 5250 8900 5300
+Wire Wire Line
+	8900 5300 8800 5300
+Connection ~ 8900 5300
+Wire Wire Line
+	8900 5300 8900 5350
+Wire Wire Line
+	10050 5300 10000 5300
+Connection ~ 9700 5300
+Wire Wire Line
+	9700 5300 9700 5250
+Wire Wire Line
+	10000 5250 10000 5300
+Connection ~ 10000 5300
+Wire Wire Line
+	10000 5300 9700 5300
+Wire Wire Line
+	10050 5650 8800 5650
+Wire Wire Line
+	8800 5650 8800 5300
+Connection ~ 8800 5300
+Wire Wire Line
+	8800 5300 8700 5300
+Wire Wire Line
+	10550 5650 10900 5650
+Wire Wire Line
+	10900 5650 10900 5300
+Wire Wire Line
+	10900 5300 10750 5300
+Text Label 10900 5500 0    50   ~ 0
+B_1
+$Comp
+L HVolt_sub-system-FIT:B3F-4050-SamacSys_Parts S1
+U 1 1 60E1EDD7
+P 6300 5100
+F 0 "S1" H 6700 5365 50  0000 C CNN
+F 1 "B3F-4050-SamacSys_Parts" H 6700 5274 50  0000 C CNN
+F 2 "B3F-4000" H 6950 5200 50  0001 L CNN
+F 3 "https://www.omron.com/ecb/products/pdf/en-b3f.pdf" H 6950 5100 50  0001 L CNN
+F 4 "lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 3mm" H 6950 5000 50  0001 L CNN "Description"
+F 5 "Omron Electronics" H 6950 4800 50  0001 L CNN "Manufacturer_Name"
+F 6 "B3F-4050" H 6950 4700 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "653-B3F-4050" H 6950 4600 50  0001 L CNN "Mouser Part Number"
+F 8 "https://www.mouser.com/Search/Refine.aspx?Keyword=653-B3F-4050" H 6950 4500 50  0001 L CNN "Mouser Price/Stock"
+F 9 "6866768P" H 6950 4400 50  0001 L CNN "RS Part Number"
+F 10 "http://uk.rs-online.com/web/p/products/6866768P" H 6950 4300 50  0001 L CNN "RS Price/Stock"
+	1    6300 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R11
+U 1 1 60E1EDE3
+P 7400 5100
+F 0 "R11" H 7750 5325 50  0000 C CNN
+F 1 "10k" H 7750 5234 50  0000 C CNN
+F 2 "RESC2012X65N" H 7950 5150 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 7950 5050 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 7950 4950 50  0001 L CNN "Description"
+F 5 "0.65" H 7950 4850 50  0001 L CNN "Height"
+F 6 "" H 7950 4750 50  0001 L CNN "RS Part Number"
+F 7 "" H 7950 4650 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 7950 4550 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 7950 4450 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7400 5100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SamacSys_Parts:KTR10EZPF4220 R12
+U 1 1 60E1EDEF
+P 7450 5150
+F 0 "R12" H 7800 5375 50  0000 C CNN
+F 1 "10k" H 7800 5284 50  0000 C CNN
+F 2 "RESC2012X65N" H 8000 5200 50  0001 L CNN
+F 3 "http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf" H 8000 5100 50  0001 L CNN
+F 4 "ROHM 0805 Resistor Chip" H 8000 5000 50  0001 L CNN "Description"
+F 5 "0.65" H 8000 4900 50  0001 L CNN "Height"
+F 6 "" H 8000 4800 50  0001 L CNN "RS Part Number"
+F 7 "" H 8000 4700 50  0001 L CNN "RS Price/Stock"
+F 8 "ROHM Semiconductor" H 8000 4600 50  0001 L CNN "Manufacturer_Name"
+F 9 "KTR10EZPF4220" H 8000 4500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7450 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GCG21BR71H154KA01K C2
+U 1 1 60E1EDFB
+P 7950 5500
+F 0 "C2" H 8200 5765 50  0000 C CNN
+F 1 "100nF" H 8200 5674 50  0000 C CNN
+F 2 "CAPC2012X145N" H 8300 5550 50  0001 L CNN
+F 3 "https://psearch.en.murata.com/capacitor/product/GCG21BR71H154KA01%23.html" H 8300 5450 50  0001 L CNN
+F 4 "Capacitor L=2.0mm W=1.25mm T=1.25mm" H 8300 5350 50  0001 L CNN "Description"
+F 5 "1.45" H 8300 5250 50  0001 L CNN "Height"
+F 6 "" H 8300 5150 50  0001 L CNN "RS Part Number"
+F 7 "" H 8300 5050 50  0001 L CNN "RS Price/Stock"
+F 8 "Murata Electronics" H 8300 4950 50  0001 L CNN "Manufacturer_Name"
+F 9 "GCG21BR71H154KA01K" H 8300 4850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    7950 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 5200 7100 5150
+Text GLabel 6100 5150 0    50   Input ~ 0
+gnd
+Wire Wire Line
+	6300 5100 6300 5150
+Wire Wire Line
+	6300 5150 6200 5150
+Connection ~ 6300 5150
+Wire Wire Line
+	6300 5150 6300 5200
+Wire Wire Line
+	7450 5150 7400 5150
+Connection ~ 7100 5150
+Wire Wire Line
+	7100 5150 7100 5100
+Wire Wire Line
+	7400 5100 7400 5150
+Connection ~ 7400 5150
+Wire Wire Line
+	7400 5150 7100 5150
+Wire Wire Line
+	7450 5500 6200 5500
+Wire Wire Line
+	6200 5500 6200 5150
+Connection ~ 6200 5150
+Wire Wire Line
+	6200 5150 6100 5150
+Wire Wire Line
+	7950 5500 8300 5500
+Wire Wire Line
+	8300 5500 8300 5150
+Wire Wire Line
+	8300 5150 8150 5150
+Text Label 8300 5350 0    50   ~ 0
+B_2
+Text GLabel 7400 4400 0    50   Input ~ 0
++3V
+Text GLabel 10000 4550 0    50   Input ~ 0
++3V
+Wire Notes Line
+	5800 7000 750  7000
+Wire Notes Line
+	750  750  750  7000
+Wire Notes Line
+	5800 750  5800 7000
+Wire Notes Line
+	11150 6450 5800 6450
+Wire Notes Line
+	750  3650 11150 3650
+Wire Notes Line
+	750  750  11150 750 
+Wire Notes Line
+	11150 750  11150 6450
+Wire Notes Line
+	8400 750  8400 3650
+$Comp
+L SamacSys_Parts:M20-9990645 J1
+U 1 1 60DCBD5A
+P 4550 2850
+F 0 "J1" H 5178 2646 50  0000 L CNN
+F 1 "Pickit" H 5178 2555 50  0000 L CNN
+F 2 "HDRV6W66P0X254_1X6_1524X254X874P" H 5200 2950 50  0001 L CNN
+F 3 "http://uk.rs-online.com/web/p/products/6812994P" H 5200 2850 50  0001 L CNN
+F 4 "M20 Header, Pin, Sil, Vertical, 6 W HARWIN M20 Series, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Through Hole, Solder Termination" H 5200 2750 50  0001 L CNN "Description"
+F 5 "8.74" H 5200 2650 50  0001 L CNN "Height"
+F 6 "6812994P" H 5200 2550 50  0001 L CNN "RS Part Number"
+F 7 "http://uk.rs-online.com/web/p/products/6812994P" H 5200 2450 50  0001 L CNN "RS Price/Stock"
+F 8 "Harwin" H 5200 2350 50  0001 L CNN "Manufacturer_Name"
+F 9 "M20-9990645" H 5200 2250 50  0001 L CNN "Manufacturer_Part_Number"
+F 10 "R1052705" H 5200 2150 50  0001 L CNN "Allied_Number"
+	1    4550 2850
+	1    0    0    -1  
+$EndComp
+Text Label 4550 2850 2    50   ~ 0
+MCLR
+Text Label 4550 3150 2    50   ~ 0
+B_1
+Text Label 4550 3250 2    50   ~ 0
+B_2
+NoConn ~ 4550 3350
+Text GLabel 4550 3050 0    50   Input ~ 0
+gnd
+Text GLabel 4550 2950 0    50   Input ~ 0
++3V
+Text Label 1150 1900 2    50   ~ 0
+MCLR
+Wire Wire Line
+	1150 1900 1200 1900
+Wire Wire Line
+	1200 1900 1200 1800
+Connection ~ 1200 1800
+Wire Wire Line
+	1200 1800 1750 1800
+$EndSCHEMATC
