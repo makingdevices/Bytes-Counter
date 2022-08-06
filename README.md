@@ -30,17 +30,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://makingdevices.com/links/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Bytes Counter</h3>
+<h3 align="center">Making Devices</h3>
 
   <p align="center">
-    Bytes Counter is a simple Tally Counter for counting people in places, helping you in inventories, practising soldering or just counting things at work! The project was chosen to test some PCB manufacturer capabilities and experiment with both the XLP (Extreme Low-Power Technology) and the PIC18LF14K50 itself
-    <br />
-    <a href="https://github.com/makingdevices/Bytes-Counter/tree/main/v1"><strong>Explore the latest update »</strong></a>
-    <br />
+    Open Source projects where we struggle with engineering, electronics, coding and who knows what else... In this case, Bytes Counter is a very simple digital tally counter, so hopefully you fint it interesting ;)
   </p>
 </div>
 
@@ -77,9 +74,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Bytes Counter Shot][product-screenshot]](https://example.com)
+[![Bytes Counter Shot][product-screenshot]](https://makingdevices.com/Bytes-Counter)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Bytes Counter is a simple Tally Counter for counting people in places, helping you in inventories, practising soldering or just counting things at work! The project was chosen to test some PCB manufacturer capabilities and experiment with both the XLP (Extreme Low-Power Technology) and the pic18LF14k50 itself
+
+The PCB does not have any power button, since the project's approach is to use the XLP technology of the PIC. It only has two buttons: increase/decrease the count.
+
+A buzzer helps you count anything without needing to read the display every time so that you can focus on your work.
+
+Even after weeks or months, the count is kept while in deep sleep mode.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
