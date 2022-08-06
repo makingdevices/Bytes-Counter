@@ -20,7 +20,6 @@
 -->
 [![Instagram][ig-shield]][ig-url]
 [![PCBWAY][sponsor-shield]][sponsor-url]
-[![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GPL v3 License][license-shield]][license-url]
@@ -190,7 +189,7 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 [kicad-url]: https://www.kicad.org/
 [YT-screenshot]: images/YT_assembly.PNG
 [sponsor-icon]:  https://img.shields.io/badge/-PCBWAY-black.svg?style=for-the-badge&colorB=1200
-[ig-shield]: https://img.shields.io/badge/ig-0b03fc?style=for-the-badge&logo=instagram&logoColor=white
+[ig-shield]: https://img.shields.io/badge/instagram-a83297?style=for-the-badge&logo=instagram&logoColor=white
 [ig-url]: https://www.instagram.com/makingdevices/
 [MPLAB-C]: https://img.shields.io/badge/MPLAB%20C18-DD0031?style=for-the-badge&logo=C&logoColor=white
 [MPLAB-C-url]: https://www.microchip.com/en-us/development-tool/SW006011
