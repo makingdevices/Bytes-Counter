@@ -39,7 +39,7 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/makingdevices/Bytes-Counter"><strong>Explore the latest update »</strong></a>
+    <a href="https://github.com/makingdevices/Bytes-Counter/tree/main/v1"><strong>Explore the latest update »</strong></a>
     <br />
   </p>
 </div>
