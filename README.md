@@ -111,12 +111,14 @@ To get a local copy up and running follow these simple example steps.
 ### Build one
 
 1. Get the gerber files for the latest version: [V1](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Gerber/BytesCounterV1.zip) 
-2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url] )
+2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url])
 3. Buy all the components from the [Bill Of Materials](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/BytesCounter_BOM.xlsx)
 4. Solder everything
 5. Burn the [latest firmware](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Simulation/Bytes_Counter.hex)
 
-[Assembly video](https://www.youtube.com/watch?v=Gu0cR_CFLYs)
+Here it is an assembly video:
+
+[![Assembly Shot][YT-screenshot]](https://www.youtube.com/watch?v=Gu0cR_CFLYs)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,6 +197,7 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
 [sponsor-screenshot]: /images/PCB_sponsor.png
 [product-screenshot]: images/screenshot.jpg
+[YT-screenshot]: images/YT_assembly.PNG
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
