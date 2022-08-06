@@ -146,16 +146,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Count up/down and show it on screen
-- [ ] enable/disable sound when pressing buttons
-- [ ] Low Power Consumption
-    - [ ] Lower the frequency of the microcontroller at minimum
-    - [ ] Enter deep sleep mode automatically
+- [x] Count up/down and show it on screen
+- [x] enable/disable sound when pressing buttons
+- [x] Low Power Consumption
+    - [x] Lower the frequency of the microcontroller at minimum
+    - [x] Enter deep sleep mode automatically
 
 See the [open issues](https://github.com/makingdevices/Bytes-Counter/issues) for a full list of proposed features (and known issues).
 
