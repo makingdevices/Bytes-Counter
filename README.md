@@ -37,7 +37,7 @@
 <h3 align="center">Bytes Counter</h3>
 
   <p align="center">
-    project_description
+    Bytes Counter is a simple Tally Counter for counting people in places, helping you in inventories, practising soldering or just counting things at work! The project was chosen to test some PCB manufacturer capabilities and experiment with both the XLP (Extreme Low-Power Technology) and the PIC18LF14K50 itself
     <br />
     <a href="https://github.com/makingdevices/Bytes-Counter/tree/main/v1"><strong>Explore the latest update »</strong></a>
     <br />
@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Bytes Counter Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
 
@@ -224,7 +224,7 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [linkedin-url]: https://www.linkedin.com/company/making-devices/
 [sponsor-shield]: https://img.shields.io/badge/SPONSOR-PCBWAY-black.svg?style=for-the-badge&colorB=1200
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/screenshot.jpg
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
