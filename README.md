@@ -37,7 +37,7 @@
 <h3 align="center">Making Devices</h3>
 
   <p align="center">
-    Open Source projects where we struggle with engineering, electronics, coding and who knows what else... In this case, Bytes Counter is a very simple digital tally counter, so hopefully you fint it interesting ;)
+    Open Source projects where we struggle with engineering, electronics, coding and who knows what else... In this case, Bytes Counter is a very simple digital tally counter, so hopefully you may find it interesting ;)
   </p>
 </div>
 
