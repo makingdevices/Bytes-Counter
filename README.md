@@ -87,9 +87,11 @@ Even after weeks or months, the count is kept while in deep sleep mode.
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
+* [![Microcontroller][PIC]][PIC-url]
 * [![MPLAB C][MPLAB-C]][MPLAB-C-url]
-* [![Vue][Vue.js]][Vue-url]
+* [![Kicad][kicad-shield]][kicad-url]
+* [![SPONSOR][sponsor-icon]][sponsor-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,7 +187,12 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
 [sponsor-screenshot]: /images/PCB_sponsor.png
 [product-screenshot]: images/screenshot.jpg
+[PIC]: https://img.shields.io/badge/PIC18LF14K50-000000?style=for-the-badge
+[PIC-url]: http://ww1.microchip.com/downloads/en/devicedoc/40001350f.pdf
+[kicad-shield]: https://img.shields.io/badge/kicad-0b03fc?style=for-the-badge&logo=kicad&logoColor=white
+[kicad-url]: https://www.kicad.org/
 [YT-screenshot]: images/YT_assembly.PNG
+[sponsor-icon]:  https://img.shields.io/badge/-PCBWAY-black.svg?style=for-the-badge&colorB=1200
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
