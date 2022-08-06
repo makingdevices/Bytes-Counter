@@ -102,40 +102,23 @@ Even after weeks or months, the count is kept while in deep sleep mode.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Build one
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+1. Get the gerber files for the latest version: [V1](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Gerber/BytesCounterV1.zip) 
+2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY]([sponsor-url]) )
+3. Buy all the components from the [Bill Of Materials](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/BytesCounter_BOM.xlsx)
+4. Solder everything
+5. Burn the [latest firmware](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Simulation/Bytes_Counter.hex)
 
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+[Assembly video](https://www.youtube.com/watch?v=Gu0cR_CFLYs)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- USAGE EXAMPLES -->
 ## Usage
@@ -169,9 +152,7 @@ State: Project <b>FINISHED</b> - 01/08/2022
 ## License
 
 Distributed under the GPLv3 License. See `LICENSE.txt` for more information.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
@@ -190,9 +171,7 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 
 PCBWay is the most professional PCB manufacturer for prototyping and low-volume production to work with in the world. With more than a decade in the field, They are committed to meeting the needs of their customers from different industries in terms of quality, delivery, cost-effectiveness and any other demanding requests. As Sponsor of Making Devices, they will be in charge of all the PCBs for MDV, allowing both of us to grow together in a long term partnership. We hope you take them into account for your both personal and professional prototypes or products.
 
-<p align="center">
 [![Sponsor Shot][sponsor-screenshot]](sponsor-url)
-</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
