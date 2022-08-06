@@ -54,7 +54,7 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Build one</a>
+      <a href="#Build-one">Build one</a>
       <ul>
       </ul>
     </li>
@@ -83,8 +83,6 @@ Even after weeks or months, the count is kept while in deep sleep mode.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
 ### Built With
 
 [![Microcontroller][PIC]][PIC-url]
@@ -92,13 +90,11 @@ Even after weeks or months, the count is kept while in deep sleep mode.
 [![Kicad][kicad-shield]][kicad-url]
 [![SPONSOR][sponsor-icon]][sponsor-url]
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 
-### Build one
+## Build one
 
 1. Get the gerber files for the latest version: [V1](https://github.com/makingdevices/Bytes-Counter/blob/main/v1/Gerber/BytesCounterV1.zip) 
 2. Send them to a PCB manufacturer ([Our Sponsor is PCBWAY][sponsor-url])
