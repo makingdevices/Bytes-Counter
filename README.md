@@ -87,10 +87,10 @@ Even after weeks or months, the count is kept while in deep sleep mode.
 
 ### Built With
 
-* [![Microcontroller][PIC]][PIC-url]
-* [![MPLAB C][MPLAB-C]][MPLAB-C-url]
-* [![Kicad][kicad-shield]][kicad-url]
-* [![SPONSOR][sponsor-icon]][sponsor-url]
+[![Microcontroller][PIC]][PIC-url]
+[![MPLAB C][MPLAB-C]][MPLAB-C-url]
+[![Kicad][kicad-shield]][kicad-url]
+[![SPONSOR][sponsor-icon]][sponsor-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
