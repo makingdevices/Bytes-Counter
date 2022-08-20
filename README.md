@@ -22,7 +22,6 @@
 [![PCBWAY][sponsor-shield]][sponsor-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-<!--[![GPL v3 License][license-shield]][license-url]  -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
