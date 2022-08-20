@@ -22,7 +22,7 @@
 [![PCBWAY][sponsor-shield]][sponsor-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![GPL v3 License][license-shield]][license-url]
+<!--[![GPL v3 License][license-shield]][license-url]  -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -140,7 +140,12 @@ State: Project <b>FINISHED</b> - 01/08/2022
 <!-- LICENSE -->
 ## License
 
-Distributed under the GPLv3 License. See `LICENSE.txt` for more information.
+Distributed under three licenses:
+- [Hardware](/License/HW_cern_ohl_s_v2.pdf)
+- [Software](/License/SW_GPLv3.0.txt)
+- [Documentation](/License/Documentation_CC-BY-SA-4.0.txt)
+
+[![GPL v3 License][license-shield]][license-url] 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
