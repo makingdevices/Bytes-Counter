@@ -176,7 +176,7 @@ PCBWay is the most professional PCB manufacturer for prototyping and low-volume 
 [stars-url]: https://github.com/makingdevices/Bytes-Counter/stargazers
 [issues-shield]: https://img.shields.io/github/issues/makingdevices/Bytes-Counter.svg?style=for-the-badge
 [issues-url]: https://github.com/makingdevices/Bytes-Counter/issues
-[license-shield]: /images/license.svg
+[license-shield]: /images/license.png
 [license-url]: https://github.com/makingdevices/Bytes-Counter/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/making-devices/
