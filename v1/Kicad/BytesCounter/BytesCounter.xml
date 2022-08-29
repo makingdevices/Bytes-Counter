@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\rubenelportero\Desktop\Making Devices\Bytes Counter\Kicad\BytesCounter\BytesCounter.sch</source>
-    <date>18/07/2021 20:42:39</date>
-    <tool>Eeschema (5.1.10)-1</tool>
+    <source>C:\Users\rubenelportero\Desktop\Making Devices\Projects\Bytes Counter\v1\Kicad\BytesCounter\BytesCounter.sch</source>
+    <date>19/08/2022 09:49:35</date>
+    <tool>Eeschema (5.1.12-1-g0a0a2da680)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>Bytes Counter</title>
+        <company>Making Devices</company>
+        <rev>v1</rev>
+        <date>2021-09-07</date>
         <source>BytesCounter.sch</source>
-        <comment number="1" value=""/>
+        <comment number="1" value="https://makingdevices.com"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -28,7 +28,7 @@
         <field name="Manufacturer_Name">RS Components</field>
         <field name="Manufacturer_Part_Number">CH075-2032</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="CH075-2032" description="RS Pro Battery Holder"/>
+      <libsource lib="BytesCounter-rescue" part="CH075-2032-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DB9412</tstamp>
     </comp>
@@ -53,7 +53,7 @@
         <field name="RS Part Number">6866768P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6866768P</field>
       </fields>
-      <libsource lib="HVolt_sub-system-FIT" part="B3F-4050-SamacSys_Parts" description=""/>
+      <libsource lib="BytesCounter-rescue" part="B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC6119</tstamp>
     </comp>
@@ -70,7 +70,7 @@
         <field name="RS Part Number">1841498P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1841498P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="SMMBT5551LT1G" description="NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23"/>
+      <libsource lib="BytesCounter-rescue" part="SMMBT5551LT1G-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC98DF</tstamp>
     </comp>
@@ -87,7 +87,7 @@
         <field name="RS Part Number">1841498P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1841498P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="SMMBT5551LT1G" description="NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23"/>
+      <libsource lib="BytesCounter-rescue" part="SMMBT5551LT1G-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DCAC0C</tstamp>
     </comp>
@@ -104,7 +104,7 @@
         <field name="RS Part Number">1841498P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1841498P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="SMMBT5551LT1G" description="NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23"/>
+      <libsource lib="BytesCounter-rescue" part="SMMBT5551LT1G-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DCE445</tstamp>
     </comp>
@@ -121,7 +121,7 @@
         <field name="RS Part Number">1841498P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1841498P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="SMMBT5551LT1G" description="NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23"/>
+      <libsource lib="BytesCounter-rescue" part="SMMBT5551LT1G-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DD0B4E</tstamp>
     </comp>
@@ -135,12 +135,12 @@
         <field name="Manufacturer_Name">Jiangsu Huaneng Elec</field>
         <field name="Manufacturer_Part_Number">TMB12A05</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="TMB12A05" description="12*9.5 Buzzers RoHS"/>
+      <libsource lib="BytesCounter-rescue" part="TMB12A05-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DBA64E</tstamp>
     </comp>
     <comp ref="R4">
-      <value>220</value>
+      <value>100</value>
       <footprint>RESC2012X65N</footprint>
       <datasheet>http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf</datasheet>
       <fields>
@@ -149,12 +149,12 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DBCD60</tstamp>
     </comp>
     <comp ref="R6">
-      <value>220</value>
+      <value>100</value>
       <footprint>RESC2012X65N</footprint>
       <datasheet>http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf</datasheet>
       <fields>
@@ -163,12 +163,12 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DBE8C7</tstamp>
     </comp>
     <comp ref="R8">
-      <value>220</value>
+      <value>100</value>
       <footprint>RESC2012X65N</footprint>
       <datasheet>http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf</datasheet>
       <fields>
@@ -177,12 +177,12 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DBF47D</tstamp>
     </comp>
     <comp ref="R10">
-      <value>220</value>
+      <value>100</value>
       <footprint>RESC2012X65N</footprint>
       <datasheet>http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf</datasheet>
       <fields>
@@ -191,7 +191,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DBFF96</tstamp>
     </comp>
@@ -205,7 +205,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC0C22</tstamp>
     </comp>
@@ -219,7 +219,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC1BE9</tstamp>
     </comp>
@@ -233,7 +233,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC267B</tstamp>
     </comp>
@@ -247,7 +247,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC3869</tstamp>
     </comp>
@@ -261,7 +261,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC4A25</tstamp>
     </comp>
@@ -275,7 +275,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC654E</tstamp>
     </comp>
@@ -289,7 +289,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC8FE3</tstamp>
     </comp>
@@ -303,7 +303,7 @@
         <field name="Manufacturer_Name">Murata Electronics</field>
         <field name="Manufacturer_Part_Number">GCG21BR71H154KA01K</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="GCG21BR71H154KA01K" description="Capacitor L=2.0mm W=1.25mm T=1.25mm"/>
+      <libsource lib="BytesCounter-rescue" part="GCG21BR71H154KA01K-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DC9FA1</tstamp>
     </comp>
@@ -317,7 +317,7 @@
         <field name="Manufacturer_Name">Murata Electronics</field>
         <field name="Manufacturer_Part_Number">GCG21BR71H154KA01K</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="GCG21BR71H154KA01K" description="Capacitor L=2.0mm W=1.25mm T=1.25mm"/>
+      <libsource lib="BytesCounter-rescue" part="GCG21BR71H154KA01K-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DCC146</tstamp>
     </comp>
@@ -331,7 +331,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DCE13B</tstamp>
     </comp>
@@ -348,7 +348,7 @@
         <field name="RS Part Number">1841498P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/1841498P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="SMMBT5551LT1G" description="NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23"/>
+      <libsource lib="BytesCounter-rescue" part="SMMBT5551LT1G-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DCD8FE</tstamp>
     </comp>
@@ -362,13 +362,13 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DE4973</tstamp>
     </comp>
     <comp ref="IC1">
       <value>PIC18LF14K50-I_SO</value>
-      <footprint>SOIC127P1030X265-20N</footprint>
+      <footprint>Package_SO:SSOP-20_5.3x7.2mm_P0.65mm</footprint>
       <datasheet>http://uk.rs-online.com/web/p/products/6669239P</datasheet>
       <fields>
         <field name="Allied_Number">70047097</field>
@@ -379,7 +379,7 @@
         <field name="RS Part Number">6669239P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6669239P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="PIC18LF14K50-I_SO" description="MCU 16K Flash 768 RAM USB 2.0 SOIC20"/>
+      <libsource lib="BytesCounter-rescue" part="PIC18LF14K50-I_SO-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DB5C9B</tstamp>
     </comp>
@@ -393,7 +393,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DED7F7</tstamp>
     </comp>
@@ -409,7 +409,7 @@
         <field name="RS Part Number">6920935P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6920935P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="LTST-C171GKT" description="Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package"/>
+      <libsource lib="BytesCounter-rescue" part="LTST-C171GKT-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60DEF1BB</tstamp>
     </comp>
@@ -426,7 +426,7 @@
         <field name="RS Part Number">6866768P</field>
         <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6866768P</field>
       </fields>
-      <libsource lib="HVolt_sub-system-FIT" part="B3F-4050-SamacSys_Parts" description=""/>
+      <libsource lib="BytesCounter-rescue" part="B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E1EDD7</tstamp>
     </comp>
@@ -440,7 +440,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E1EDE3</tstamp>
     </comp>
@@ -454,7 +454,7 @@
         <field name="Manufacturer_Name">ROHM Semiconductor</field>
         <field name="Manufacturer_Part_Number">KTR10EZPF4220</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="KTR10EZPF4220" description="ROHM 0805 Resistor Chip"/>
+      <libsource lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E1EDEF</tstamp>
     </comp>
@@ -468,59 +468,63 @@
         <field name="Manufacturer_Name">Murata Electronics</field>
         <field name="Manufacturer_Part_Number">GCG21BR71H154KA01K</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="GCG21BR71H154KA01K" description="Capacitor L=2.0mm W=1.25mm T=1.25mm"/>
+      <libsource lib="BytesCounter-rescue" part="GCG21BR71H154KA01K-SamacSys_Parts" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>60E1EDFB</tstamp>
     </comp>
-    <comp ref="J1">
-      <value>Pickit</value>
-      <footprint>HDRV6W66P0X254_1X6_1524X254X874P</footprint>
-      <datasheet>http://uk.rs-online.com/web/p/products/6812994P</datasheet>
+    <comp ref="D1">
+      <value>ZLLS410TA</value>
+      <footprint>SOD2513X120N</footprint>
+      <datasheet>http://uk.rs-online.com/web/p/products/7515203P</datasheet>
       <fields>
-        <field name="Allied_Number">R1052705</field>
-        <field name="Description">M20 Header, Pin, Sil, Vertical, 6 W HARWIN M20 Series, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Through Hole, Solder Termination</field>
-        <field name="Height">8.74</field>
-        <field name="Manufacturer_Name">Harwin</field>
-        <field name="Manufacturer_Part_Number">M20-9990645</field>
-        <field name="RS Part Number">6812994P</field>
-        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6812994P</field>
+        <field name="Description">Diodes Inc ZLLS410TA, SMT Schottky Diode, 10V 750mA, 3ns, 2-Pin SOD-323</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">ZLLS410TA</field>
+        <field name="RS Part Number">7515203P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7515203P</field>
       </fields>
-      <libsource lib="SamacSys_Parts" part="M20-9990645" description="M20 Header, Pin, Sil, Vertical, 6 W HARWIN M20 Series, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Through Hole, Solder Termination"/>
+      <libsource lib="Library_Loader" part="ZLLS410TA" description="Diodes Inc ZLLS410TA, SMT Schottky Diode, 10V 750mA, 3ns, 2-Pin SOD-323"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>60DCBD5A</tstamp>
+      <tstamp>6137908F</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>ZLLS410TA</value>
+      <footprint>SOD2513X120N</footprint>
+      <datasheet>http://uk.rs-online.com/web/p/products/7515203P</datasheet>
+      <fields>
+        <field name="Description">Diodes Inc ZLLS410TA, SMT Schottky Diode, 10V 750mA, 3ns, 2-Pin SOD-323</field>
+        <field name="Height">1.2</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">ZLLS410TA</field>
+        <field name="RS Part Number">7515203P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7515203P</field>
+      </fields>
+      <libsource lib="Library_Loader" part="ZLLS410TA" description="Diodes Inc ZLLS410TA, SMT Schottky Diode, 10V 750mA, 3ns, 2-Pin SOD-323"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6137A815</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>TC2030-MCP-NL</value>
+      <footprint>TC2030-MCP-NL</footprint>
+      <datasheet>http://uk.rs-online.com/web/p/products/8252561</datasheet>
+      <fields>
+        <field name="Description">TC2030-MCP-NL PCB Footprint (no legs)</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">TC2030-MCP-NL</field>
+        <field name="RS Part Number">8252561</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8252561</field>
+      </fields>
+      <libsource lib="Library_Loader" part="TC2030-MCP-NL" description="TC2030-MCP-NL PCB Footprint (no legs)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613873A5</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="Display_Character" part="CC56-12EWA">
-      <description>4 digit 7 segment high efficiency red LED, common cathode</description>
-      <docs>http://www.kingbrightusa.com/images/catalog/SPEC/CA56-12EWA.pdf</docs>
-      <footprints>
-        <fp>*CA56*12EWA*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">CC56-12EWA</field>
-        <field name="Footprint">Display_7Segment:CA56-12EWA</field>
-      </fields>
-      <pins>
-        <pin num="1" name="e" type="input"/>
-        <pin num="2" name="d" type="input"/>
-        <pin num="3" name="DPX" type="input"/>
-        <pin num="4" name="c" type="input"/>
-        <pin num="5" name="g" type="input"/>
-        <pin num="6" name="CC4" type="input"/>
-        <pin num="7" name="b" type="input"/>
-        <pin num="8" name="CC3" type="input"/>
-        <pin num="9" name="CC2" type="input"/>
-        <pin num="10" name="f" type="input"/>
-        <pin num="11" name="a" type="input"/>
-        <pin num="12" name="CC1" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="HVolt_sub-system-FIT" part="B3F-4050-SamacSys_Parts">
+    <libpart lib="BytesCounter-rescue" part="B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT">
       <fields>
         <field name="Reference">S</field>
-        <field name="Value">B3F-4050-SamacSys_Parts</field>
+        <field name="Value">B3F-4050-SamacSys_Parts-HVolt_sub-system-FIT</field>
         <field name="Footprint">B3F-4000</field>
         <field name="Datasheet">https://www.omron.com/ecb/products/pdf/en-b3f.pdf</field>
         <field name="Description">lvory Plunger Tactile Switch, SPST-NO 0.05 A@ 24 V dc 3mm</field>
@@ -538,11 +542,10 @@
         <pin num="4" name="4" type="unspc"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="CH075-2032">
-      <description>RS Pro Battery Holder</description>
+    <libpart lib="BytesCounter-rescue" part="CH075-2032-SamacSys_Parts">
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">CH075-2032</field>
+        <field name="Value">CH075-2032-SamacSys_Parts</field>
         <field name="Footprint">CH0752032</field>
         <field name="Description">RS Pro Battery Holder</field>
         <field name="Height">6.6</field>
@@ -554,12 +557,10 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="GCG21BR71H154KA01K">
-      <description>Capacitor L=2.0mm W=1.25mm T=1.25mm</description>
-      <docs>https://psearch.en.murata.com/capacitor/product/GCG21BR71H154KA01%23.html</docs>
+    <libpart lib="BytesCounter-rescue" part="GCG21BR71H154KA01K-SamacSys_Parts">
       <fields>
         <field name="Reference">C</field>
-        <field name="Value">GCG21BR71H154KA01K</field>
+        <field name="Value">GCG21BR71H154KA01K-SamacSys_Parts</field>
         <field name="Footprint">CAPC2012X145N</field>
         <field name="Datasheet">https://psearch.en.murata.com/capacitor/product/GCG21BR71H154KA01%23.html</field>
         <field name="Description">Capacitor L=2.0mm W=1.25mm T=1.25mm</field>
@@ -572,12 +573,10 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="KTR10EZPF4220">
-      <description>ROHM 0805 Resistor Chip</description>
-      <docs>http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf</docs>
+    <libpart lib="BytesCounter-rescue" part="KTR10EZPF4220-SamacSys_Parts">
       <fields>
         <field name="Reference">R</field>
-        <field name="Value">KTR10EZPF4220</field>
+        <field name="Value">KTR10EZPF4220-SamacSys_Parts</field>
         <field name="Footprint">RESC2012X65N</field>
         <field name="Datasheet">http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/ktr.pdf</field>
         <field name="Description">ROHM 0805 Resistor Chip</field>
@@ -590,12 +589,10 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="LTST-C171GKT">
-      <description>Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package</description>
-      <docs>http://uk.rs-online.com/web/p/products/6920935P</docs>
+    <libpart lib="BytesCounter-rescue" part="LTST-C171GKT-SamacSys_Parts">
       <fields>
         <field name="Reference">LED</field>
-        <field name="Value">LTST-C171GKT</field>
+        <field name="Value">LTST-C171GKT-SamacSys_Parts</field>
         <field name="Footprint">LEDC2012X90N</field>
         <field name="Datasheet">http://uk.rs-online.com/web/p/products/6920935P</field>
         <field name="Description">Lite-On LTST-C171GKT, CHIPLED 0805 569 nm Green LED, 2012 (0805) SMD package</field>
@@ -610,37 +607,10 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="M20-9990645">
-      <description>M20 Header, Pin, Sil, Vertical, 6 W HARWIN M20 Series, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Through Hole, Solder Termination</description>
-      <docs>http://uk.rs-online.com/web/p/products/6812994P</docs>
-      <fields>
-        <field name="Reference">J</field>
-        <field name="Value">M20-9990645</field>
-        <field name="Footprint">HDRV6W66P0X254_1X6_1524X254X874P</field>
-        <field name="Datasheet">http://uk.rs-online.com/web/p/products/6812994P</field>
-        <field name="Description">M20 Header, Pin, Sil, Vertical, 6 W HARWIN M20 Series, 2.54mm Pitch 6 Way 1 Row Straight Pin Header, Through Hole, Solder Termination</field>
-        <field name="Height">8.74</field>
-        <field name="RS Part Number">6812994P</field>
-        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/6812994P</field>
-        <field name="Manufacturer_Name">Harwin</field>
-        <field name="Manufacturer_Part_Number">M20-9990645</field>
-        <field name="Allied_Number">R1052705</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
-        <pin num="5" name="5" type="passive"/>
-        <pin num="6" name="6" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="SamacSys_Parts" part="PIC18LF14K50-I_SO">
-      <description>MCU 16K Flash 768 RAM USB 2.0 SOIC20</description>
-      <docs>http://uk.rs-online.com/web/p/products/6669239P</docs>
+    <libpart lib="BytesCounter-rescue" part="PIC18LF14K50-I_SO-SamacSys_Parts">
       <fields>
         <field name="Reference">IC</field>
-        <field name="Value">PIC18LF14K50-I_SO</field>
+        <field name="Value">PIC18LF14K50-I_SO-SamacSys_Parts</field>
         <field name="Footprint">SOIC127P1030X265-20N</field>
         <field name="Datasheet">http://uk.rs-online.com/web/p/products/6669239P</field>
         <field name="Description">MCU 16K Flash 768 RAM USB 2.0 SOIC20</field>
@@ -674,12 +644,10 @@
         <pin num="20" name="VSS" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="SMMBT5551LT1G">
-      <description>NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23</description>
-      <docs>http://uk.rs-online.com/web/p/products/1841498P</docs>
+    <libpart lib="BytesCounter-rescue" part="SMMBT5551LT1G-SamacSys_Parts">
       <fields>
         <field name="Reference">Q</field>
-        <field name="Value">SMMBT5551LT1G</field>
+        <field name="Value">SMMBT5551LT1G-SamacSys_Parts</field>
         <field name="Footprint">SOT96P237X111-3N</field>
         <field name="Datasheet">http://uk.rs-online.com/web/p/products/1841498P</field>
         <field name="Description">NPN Bipolar Transistor, 600 mA 160 V, 3-pin SOT-23</field>
@@ -696,12 +664,10 @@
         <pin num="3" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="SamacSys_Parts" part="TMB12A05">
-      <description>12*9.5 Buzzers RoHS</description>
-      <docs>https://datasheet.lcsc.com/szlcsc/Jiangsu-Huaneng-Elec-TMB12A05_C96093.pdf</docs>
+    <libpart lib="BytesCounter-rescue" part="TMB12A05-SamacSys_Parts">
       <fields>
         <field name="Reference">LS</field>
-        <field name="Value">TMB12A05</field>
+        <field name="Value">TMB12A05-SamacSys_Parts</field>
         <field name="Footprint">TMB12A05</field>
         <field name="Datasheet">https://datasheet.lcsc.com/szlcsc/Jiangsu-Huaneng-Elec-TMB12A05_C96093.pdf</field>
         <field name="Description">12*9.5 Buzzers RoHS</field>
@@ -714,201 +680,278 @@
         <pin num="2" name="-" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Display_Character" part="CC56-12EWA">
+      <description>4 digit 7 segment high efficiency red LED, common cathode</description>
+      <docs>http://www.kingbrightusa.com/images/catalog/SPEC/CA56-12EWA.pdf</docs>
+      <footprints>
+        <fp>*CA56*12EWA*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CC56-12EWA</field>
+        <field name="Footprint">Display_7Segment:CA56-12EWA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="e" type="input"/>
+        <pin num="2" name="d" type="input"/>
+        <pin num="3" name="DPX" type="input"/>
+        <pin num="4" name="c" type="input"/>
+        <pin num="5" name="g" type="input"/>
+        <pin num="6" name="CC4" type="input"/>
+        <pin num="7" name="b" type="input"/>
+        <pin num="8" name="CC3" type="input"/>
+        <pin num="9" name="CC2" type="input"/>
+        <pin num="10" name="f" type="input"/>
+        <pin num="11" name="a" type="input"/>
+        <pin num="12" name="CC1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Library_Loader" part="TC2030-MCP-NL">
+      <description>TC2030-MCP-NL PCB Footprint (no legs)</description>
+      <docs>http://uk.rs-online.com/web/p/products/8252561</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TC2030-MCP-NL</field>
+        <field name="Footprint">TC2030-MCP-NL</field>
+        <field name="Datasheet">http://uk.rs-online.com/web/p/products/8252561</field>
+        <field name="Description">TC2030-MCP-NL PCB Footprint (no legs)</field>
+        <field name="RS Part Number">8252561</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/8252561</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">TC2030-MCP-NL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-MCLR/VPP" type="passive"/>
+        <pin num="2" name="VDD" type="passive"/>
+        <pin num="3" name="GND" type="passive"/>
+        <pin num="4" name="PGD_(ICSPDAT)" type="passive"/>
+        <pin num="5" name="PGC_(ICSPCLK)" type="passive"/>
+        <pin num="6" name="UNUSED/LVP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Library_Loader" part="ZLLS410TA">
+      <description>Diodes Inc ZLLS410TA, SMT Schottky Diode, 10V 750mA, 3ns, 2-Pin SOD-323</description>
+      <docs>http://uk.rs-online.com/web/p/products/7515203P</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">ZLLS410TA</field>
+        <field name="Footprint">SOD2513X120N</field>
+        <field name="Datasheet">http://uk.rs-online.com/web/p/products/7515203P</field>
+        <field name="Description">Diodes Inc ZLLS410TA, SMT Schottky Diode, 10V 750mA, 3ns, 2-Pin SOD-323</field>
+        <field name="Height">1.2</field>
+        <field name="RS Part Number">7515203P</field>
+        <field name="RS Price/Stock">http://uk.rs-online.com/web/p/products/7515203P</field>
+        <field name="Manufacturer_Name">Diodes Inc.</field>
+        <field name="Manufacturer_Part_Number">ZLLS410TA</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
+    <library logical="BytesCounter-rescue">
+      <uri>C:\Users\rubenelportero\Desktop\Making Devices\Projects\Bytes Counter\v1\Kicad\BytesCounter/BytesCounter-rescue.lib</uri>
+    </library>
     <library logical="Display_Character">
       <uri>C:\Program Files\KiCad\share\kicad\library/Display_Character.lib</uri>
     </library>
-    <library logical="HVolt_sub-system-FIT">
-      <uri>C:/SamacSys_PCB_Library/KiCad/HVolt sub-system-FIT.lib</uri>
-    </library>
-    <library logical="SamacSys_Parts">
-      <uri>C:/SamacSys_PCB_Library/KiCad/SamacSys_Parts.lib</uri>
+    <library logical="Library_Loader">
+      <uri>D:/SamacSys_PCB_Library/KiCad/SamacSys_Parts.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(IC1-Pad3)">
-      <node ref="R3" pin="1"/>
-      <node ref="IC1" pin="3"/>
-    </net>
-    <net code="2" name="Net-(LED1-Pad2)">
-      <node ref="R3" pin="2"/>
+    <net code="1" name="Net-(LED1-Pad2)">
       <node ref="LED1" pin="2"/>
+      <node ref="R3" pin="2"/>
     </net>
-    <net code="3" name="gnd">
-      <node ref="J1" pin="3"/>
+    <net code="2" name="gnd">
       <node ref="C2" pin="2"/>
-      <node ref="S2" pin="1"/>
-      <node ref="IC1" pin="20"/>
-      <node ref="S2" pin="2"/>
-      <node ref="Q3" pin="2"/>
-      <node ref="Q2" pin="2"/>
       <node ref="LS1" pin="2"/>
-      <node ref="S1" pin="1"/>
-      <node ref="S1" pin="2"/>
-      <node ref="U2" pin="2"/>
       <node ref="Q1" pin="2"/>
+      <node ref="S1" pin="2"/>
+      <node ref="S1" pin="1"/>
+      <node ref="J1" pin="3"/>
+      <node ref="IC1" pin="20"/>
       <node ref="C3" pin="2"/>
-      <node ref="Q4" pin="2"/>
       <node ref="C1" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="S2" pin="2"/>
+      <node ref="S2" pin="1"/>
       <node ref="LED1" pin="1"/>
     </net>
-    <net code="4" name="Net-(IC1-Pad17)">
+    <net code="3" name="Net-(IC1-Pad17)">
       <node ref="IC1" pin="17"/>
     </net>
-    <net code="5" name="Net-(R15-Pad1)">
-      <node ref="S2" pin="4"/>
+    <net code="4" name="Net-(R15-Pad1)">
       <node ref="R16" pin="1"/>
       <node ref="R15" pin="1"/>
       <node ref="S2" pin="3"/>
+      <node ref="S2" pin="4"/>
     </net>
-    <net code="6" name="/C_Buzzer">
-      <node ref="IC1" pin="2"/>
-      <node ref="R13" pin="1"/>
+    <net code="5" name="/D_c">
+      <node ref="IC1" pin="14"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="6" name="/B_2">
+      <node ref="IC1" pin="18"/>
+      <node ref="D1" pin="1"/>
+      <node ref="J1" pin="5"/>
     </net>
     <net code="7" name="/B_1">
-      <node ref="C3" pin="1"/>
-      <node ref="IC1" pin="19"/>
       <node ref="J1" pin="4"/>
-      <node ref="R16" pin="2"/>
+      <node ref="IC1" pin="19"/>
+      <node ref="D2" pin="1"/>
     </net>
-    <net code="8" name="/B_2">
+    <net code="8" name="Net-(IC1-Pad3)">
+      <node ref="R3" pin="1"/>
+      <node ref="IC1" pin="3"/>
+    </net>
+    <net code="9" name="Net-(C2-Pad1)">
+      <node ref="D1" pin="2"/>
       <node ref="C2" pin="1"/>
-      <node ref="IC1" pin="18"/>
-      <node ref="J1" pin="5"/>
       <node ref="R12" pin="2"/>
     </net>
-    <net code="9" name="/D_b">
-      <node ref="IC1" pin="15"/>
-      <node ref="U1" pin="7"/>
-    </net>
-    <net code="10" name="/C_1">
-      <node ref="R1" pin="1"/>
-      <node ref="IC1" pin="13"/>
+    <net code="10" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
     </net>
     <net code="11" name="/MCLR">
       <node ref="IC1" pin="4"/>
       <node ref="R2" pin="2"/>
       <node ref="J1" pin="1"/>
     </net>
-    <net code="12" name="Net-(J1-Pad6)">
-      <node ref="J1" pin="6"/>
+    <net code="12" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="D2" pin="2"/>
     </net>
-    <net code="13" name="Net-(R11-Pad1)">
-      <node ref="S1" pin="4"/>
-      <node ref="R12" pin="1"/>
+    <net code="13" name="+3V">
+      <node ref="U2" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="IC1" pin="1"/>
+      <node ref="R2" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="14" name="Net-(R11-Pad1)">
       <node ref="S1" pin="3"/>
+      <node ref="S1" pin="4"/>
       <node ref="R11" pin="1"/>
+      <node ref="R12" pin="1"/>
     </net>
-    <net code="14" name="Net-(Q1-Pad1)">
-      <node ref="R1" pin="2"/>
-      <node ref="Q1" pin="1"/>
+    <net code="15" name="Net-(LS1-Pad1)">
+      <node ref="Q5" pin="2"/>
+      <node ref="LS1" pin="1"/>
     </net>
-    <net code="15" name="Net-(Q1-Pad3)">
+    <net code="16" name="Net-(Q1-Pad3)">
       <node ref="R4" pin="1"/>
       <node ref="Q1" pin="3"/>
     </net>
-    <net code="16" name="/D_e">
-      <node ref="IC1" pin="6"/>
+    <net code="17" name="/D_e">
       <node ref="U1" pin="1"/>
+      <node ref="IC1" pin="6"/>
     </net>
-    <net code="17" name="/D_f">
-      <node ref="IC1" pin="5"/>
+    <net code="18" name="/D_f">
       <node ref="U1" pin="10"/>
+      <node ref="IC1" pin="5"/>
     </net>
-    <net code="18" name="/D_a">
+    <net code="19" name="/D_a">
       <node ref="IC1" pin="16"/>
       <node ref="U1" pin="11"/>
     </net>
-    <net code="19" name="/CC_1">
+    <net code="20" name="/CC_1">
       <node ref="R4" pin="2"/>
       <node ref="U1" pin="12"/>
     </net>
-    <net code="20" name="/D_d">
+    <net code="21" name="/D_d">
       <node ref="IC1" pin="7"/>
       <node ref="U1" pin="2"/>
     </net>
-    <net code="21" name="/D_dp">
+    <net code="22" name="/D_dp">
       <node ref="IC1" pin="9"/>
       <node ref="U1" pin="3"/>
     </net>
-    <net code="22" name="/D_c">
-      <node ref="U1" pin="4"/>
-      <node ref="IC1" pin="14"/>
-    </net>
     <net code="23" name="/D_g">
-      <node ref="U1" pin="5"/>
       <node ref="IC1" pin="8"/>
+      <node ref="U1" pin="5"/>
     </net>
     <net code="24" name="/CC_4">
       <node ref="U1" pin="6"/>
       <node ref="R10" pin="2"/>
     </net>
-    <net code="25" name="/CC_3">
-      <node ref="U1" pin="8"/>
+    <net code="25" name="/D_b">
+      <node ref="IC1" pin="15"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="26" name="/CC_3">
       <node ref="R8" pin="2"/>
+      <node ref="U1" pin="8"/>
     </net>
-    <net code="26" name="/CC_2">
-      <node ref="U1" pin="9"/>
+    <net code="27" name="/CC_2">
       <node ref="R6" pin="2"/>
+      <node ref="U1" pin="9"/>
     </net>
-    <net code="27" name="Net-(Q3-Pad1)">
-      <node ref="Q3" pin="1"/>
-      <node ref="R7" pin="2"/>
-    </net>
-    <net code="28" name="Net-(Q3-Pad3)">
-      <node ref="Q3" pin="3"/>
-      <node ref="R8" pin="1"/>
-    </net>
-    <net code="29" name="Net-(Q2-Pad1)">
-      <node ref="Q2" pin="1"/>
-      <node ref="R5" pin="2"/>
-    </net>
-    <net code="30" name="Net-(Q2-Pad3)">
-      <node ref="Q2" pin="3"/>
-      <node ref="R6" pin="1"/>
-    </net>
-    <net code="31" name="Net-(Q4-Pad1)">
-      <node ref="Q4" pin="1"/>
-      <node ref="R9" pin="2"/>
-    </net>
-    <net code="32" name="Net-(Q4-Pad3)">
-      <node ref="Q4" pin="3"/>
-      <node ref="R10" pin="1"/>
-    </net>
-    <net code="33" name="Net-(Q5-Pad1)">
-      <node ref="Q5" pin="1"/>
-      <node ref="R13" pin="2"/>
-    </net>
-    <net code="34" name="Net-(LS1-Pad1)">
-      <node ref="Q5" pin="2"/>
-      <node ref="LS1" pin="1"/>
-    </net>
-    <net code="35" name="Net-(Q5-Pad3)">
-      <node ref="Q5" pin="3"/>
-      <node ref="R14" pin="2"/>
-    </net>
-    <net code="36" name="/C_4">
+    <net code="28" name="/C_4">
       <node ref="IC1" pin="10"/>
       <node ref="R9" pin="1"/>
     </net>
-    <net code="37" name="/C_3">
+    <net code="29" name="Net-(Q3-Pad1)">
+      <node ref="R7" pin="2"/>
+      <node ref="Q3" pin="1"/>
+    </net>
+    <net code="30" name="Net-(Q3-Pad3)">
+      <node ref="R8" pin="1"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="31" name="Net-(Q2-Pad1)">
+      <node ref="R5" pin="2"/>
+      <node ref="Q2" pin="1"/>
+    </net>
+    <net code="32" name="Net-(Q2-Pad3)">
+      <node ref="Q2" pin="3"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="33" name="Net-(Q4-Pad1)">
+      <node ref="Q4" pin="1"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="34" name="Net-(Q4-Pad3)">
+      <node ref="Q4" pin="3"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="35" name="Net-(Q1-Pad1)">
+      <node ref="R1" pin="2"/>
+      <node ref="Q1" pin="1"/>
+    </net>
+    <net code="36" name="Net-(Q5-Pad1)">
+      <node ref="R13" pin="2"/>
+      <node ref="Q5" pin="1"/>
+    </net>
+    <net code="37" name="/C_Buzzer">
+      <node ref="R13" pin="1"/>
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="38" name="Net-(Q5-Pad3)">
+      <node ref="Q5" pin="3"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="39" name="/C_3">
       <node ref="IC1" pin="11"/>
       <node ref="R7" pin="1"/>
     </net>
-    <net code="38" name="/C_2">
-      <node ref="R5" pin="1"/>
+    <net code="40" name="/C_2">
       <node ref="IC1" pin="12"/>
+      <node ref="R5" pin="1"/>
     </net>
-    <net code="39" name="+3V">
-      <node ref="C1" pin="1"/>
-      <node ref="R11" pin="2"/>
-      <node ref="J1" pin="2"/>
-      <node ref="R14" pin="1"/>
-      <node ref="IC1" pin="1"/>
-      <node ref="U2" pin="1"/>
-      <node ref="R15" pin="2"/>
-      <node ref="R2" pin="1"/>
+    <net code="41" name="/C_1">
+      <node ref="IC1" pin="13"/>
+      <node ref="R1" pin="1"/>
     </net>
   </nets>
 </export>
