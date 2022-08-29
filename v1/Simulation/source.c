@@ -1,21 +1,8 @@
 /*	Making Devices 2021
 	https://makingdevices.com
 	Rubén García Segovia
-	Tally Counter
+	Stop Watch
 */
-
-/* Working method
-
-	press + / press - button: Increase/Decrease count
-
-	Long press +: Sound event -> activate/deactivate sound buzzer every button pulsation.
-	Long press -: Reset event -> Reset the count.
-
-	60s without pressing any button: Deep Sleep mode -> Display is off and saving mode is activated. The count is keept
-
-	Any button pulsation in Deep Sleep Mode: Count as normal AND reactivate the device. 
-*/
-
 #include <p18f14k50.h>
 #include <delays.h>
 
@@ -27,20 +14,30 @@
  #pragma config LVP = OFF  
 
 char digit = 0;
-char const vector[] = {0b00111111,0b00000110,0b01011011,0b01001111,0b01100110,0b01101101,0b01111101,0b00000111,0b01111111,0b01100111,0b01111001}; //Numbers 8-segment codification
-char number[] = {0,0,0,0}; //Number Storage
+char display = 0;
 char buzz = 0; //Buzzer counter
-int reset = 0; //Reset event counter
+int buzzer_time = 25; //Time for the buzzer sound
+
+char const vector[] = {0b00111111,0b00000110,0b01011011,0b01001111,0b01100110,0b01101101,0b01111101,0b00000111,0b01111111,0b01100111,0b01111001};
+char number[] = {0,0,0,0,0,0,0,0,0};
+char pause = 0; // 0 = run // 1 = paused
+char offset = 7; //Variable to calibrate the clock
+char clock_mode = 1; //0 = 8 digits. 1 = 6 digits
+char screen_mode = 1; //0 = off. 1 = ON
+int reset = 0;
+int sleep_time = 8000; //Time before deep sleep
 int deep_sleep = 0; //Deep Sleep counter
-int buzz_reset = 0;  //Enable-disable buzz event counter
-char buzz_en = 1; //Buzzer enable
-int sleep_time = 10350; //Time before deep sleep
-int buzzer_time = 10; //Time for the buzzer sound
-int event_timer = 500; //The time we need to mantain pressed the botons to execute reset/sound events.
+float screen_time  = 48000; //Time to turn off the screen
+float screen_sleep = 0; //Screen counter
+float event_reset = 3000;
+float modes = 0;
+float event_modes = 3000;
+char count_offset = 0;
 void InitOSC(void); 
 void _low_isr (void);
 void _high_isr (void);
 void Interrupts_enable (void);
+void add_1ms (void);
 
 #pragma code low_vector=0x18 //Low interrupt priority starts at 0x18
 void low_interrupt(void)
@@ -59,47 +56,59 @@ _asm goto _high_isr _endasm
 #pragma interrupt _low_isr
 
 void _low_isr (void){
-
+	
 }
 
 #pragma interrupt _high_isr
-void _high_isr (void)   //High priority interrupt.
-{
-char i=0; 
-
-if(PORTAbits.RA1 == 0){  //If we are pressing one boton...
-	reset++; //We increase reset.
-	if (reset>event_timer){ //If we have the button pressed for a while...
-		buzz = 1;   //We activate buzz and LED
-		LATA = 0b00110000;
-		number[0] = 0;   //We reset the count.
-		number[1] = 0;
-		number[2] = 0;
-		number[3] = 0;
-		reset = 1;
-	}
-} else{	
-	reset = 0; //If we are not pressing nothing, reset = 0.
-}
-if(PORTAbits.RA0 == 0){  //Same as before with enable-disable buzz event
-	buzz_reset++;
-	if (buzz_reset>event_timer){
-		buzz = 1;
-		LATA = 0b00110000;
-		buzz_en = !buzz_en;
-		buzz_reset = 1;
-	}
-} else{	
-	buzz_reset = 0;
-}
-
-if(INTCONbits.TMR0IF) //Timer0 interrupt
+void _high_isr (void)
+{	
+	if(INTCONbits.TMR0IF) //Timer0 interrupt
 	{
+	if(PORTAbits.RA1 == 0 && PORTAbits.RA0 == 1){  //If we are pressing the button...
+		screen_sleep = 0;
+		reset++; //We increase reset.
+		if (reset>event_reset && screen_mode == 1){ //If we have the button pressed for a while...
+			buzz = 1;   //We activate buzz and LED
+			LATA = 0b00100000;
+			number[0] = 0;   //We reset the count.
+			number[1] = 0;
+			number[2] = 0;
+			number[3] = 0;
+			number[4] = 0;   
+			number[5] = 0;
+			number[6] = 0;
+			number[7] = 0;
+			reset = 1;
+		}
+		screen_mode = 1;
+	} else{	
+		reset = 0; //If we are not pressing nothing, reset = 0.
+	}
 
+	if(PORTAbits.RA0 == 0 && PORTAbits.RA1 == 1){  //If we are pressing the button...
+		screen_sleep = 0;
+		modes++; //We increase reset.
+		if ((modes>event_modes) && screen_mode == 1){ //If we have the button pressed for a while...
+			buzz = 1;   //We activate buzz and LED
+			LATA = 0b00100000;
+			if(clock_mode >0 && clock_mode < 4){
+				clock_mode = 0;
+			} else if (clock_mode == 0){
+			 	//PORTAbits.RA4 = 0;
+			 	clock_mode = 4;
+			} else {
+				clock_mode = 1;
+			}
+			modes = 1;
+		}
+		if(clock_mode==4 && screen_mode==0) clock_mode=1;
+		screen_mode = 1;
+	} else{	
+		modes = 0; //If we are not pressing nothing, reset = 0.
+	}
 
-//We set the timer0 again
-TMR0H = 0xFE;
-TMR0L = 0xC7;
+	TMR0H = 0xFC;
+	TMR0L = 0xAA; 
 
 	if(buzz > 0) {  //If the buzzer was activated
 		buzz++; //increase buzz time
@@ -108,118 +117,202 @@ TMR0L = 0xC7;
 		buzz = 0;	//we stop the buzzer
 		PORTA = 0;
 	} 
-	LATC = 0; //Turn off the display before changing the number
-	switch(digit){  //Print the numbers over the display
-		case 3:		//we light the correct display
-			LATB = 0b10001111; 
-			digit = 0;
-			break;
-		case 0:
-			LATB = 0b01001111; 
-			digit = 1;
-			break;
-		case 1:
-			LATB = 0b00101111; 
-			digit = 2;
-			break;
-		case 2:
-			LATB = 0b00011111; 
-			digit = 3;
-			break;
-		default:
-			break;
+
+	if (count_offset == offset){
+		if(pause==0) add_1ms();
+		count_offset = 0;
+	} else {
+		count_offset++;
 	}
-	LATC = vector[number[digit]];  //we write the correct number depending on the display.
-	INTCONbits.TMR0IF = 0; // reset overflow bit (for timer0).
-	}	
+	LATC = 0;
+		if(clock_mode < 4) {  //SET THE display into the specific position
+			switch(digit){
+				case 3:
+					LATB = 0b10000000;
+					digit = 0;
+					display++;
+					break;
+				case 0:
+					LATB = 0b01000000;
+					digit = 1;
+					break;
+				case 1:
+					LATB = 0b00100000;
+					digit = 2;
+					break;
+				case 2:
+					LATB = 0b00010000;
+					digit = 3;
+					break;
+				default:
+					break;
+			}
+			if (display==1){
+				PORTAbits.RA4 = 0;
+			} else {
+				PORTAbits.RA4 = 1;
+				display = 0;
+			}
+		}
+		switch (clock_mode){  //Set the number in the C PORT
+			case 0:
+				if((digit+display*4)==2||(digit+display*4)==4||(digit+display*4)==6){
+					LATC = (vector[number[digit+display*4]])|0b10000000;  //The dot of the display
+				} else {
+					LATC = vector[number[digit+display*4]];
+				}
+				break;
+			case 3:
+				if ((digit+display*4)==0 || (digit+display*4)== 7){
+					LATC = 0;
+				} else if((digit+display*4)==3||(digit+display*4)==5){ //The dot of the display
+					LATC = (vector[number[digit+1+display*4]])|0b10000000;
+				} else {
+					LATC = vector[number[digit+1+display*4]];
+				}
+				break;
+			case 2:
+				if ((digit+display*4)==0 || (digit+display*4)== 7){
+					LATC = 0;
+					LATB = 0;
+				} else if((digit+display*4)==3||(digit+display*4)==5){
+					LATC = (vector[number[digit-1+display*4]])|0b10000000; //The dot of the display
+				} else {
+					LATC = vector[number[digit-1+display*4]];
+				}
+				break;
+			case 1:
+				if ((digit+display*4)==0 || (digit+display*4)== 1 || (digit+display*4)== 6 || (digit+display*4)== 7){
+					LATC = 0;
+					LATB = 0;
+				} else if((digit+display*4)==4){
+					LATC = (vector[number[digit-2+display*4]])|0b10000000; //The dot of the display
+				} else {
+					LATC = vector[number[digit-2+display*4]];
+				}
+				break;
+			case 4:
+				LATC = 0;
+				LATB = 0;
+				break;
+			default:
+				break;
+		}
+		if(clock_mode >0 && clock_mode < 4){
+			clock_mode = 1;
+			if(number[4] > 0 || number[5] > 0) clock_mode = 2;
+			if(number[6] > 0 || number[7] > 0) clock_mode = 3;
+		} 
+	INTCONbits.TMR0IF = 0; // reset overflow bit
+	}
+ 	if(INTCONbits.RABIF) { 
+		deep_sleep = 0; //We restart the deep sleep counter
+		OSCCONbits.IDLEN = 1; //Set idle mode.
 
- if(INTCONbits.RABIF) //if we are pressing a button...
-      { 
-	  	deep_sleep = 0; //We restart the deep sleep counter
-		OSCCONbits.IDLEN = 1; //Set idle mode. 
-
-		  if(PORTAbits.RA0 == 0 && buzz == 0){ //Increase the number if the "+" button is pressed
-			 if(!(number[3] == 9 && number[2] == 9 && number[1] == 9 && number[0] == 9)) number[0]++;
-		  	 if(buzz_en == 1) LATA = 0b00100000;
-		     buzz = 1;
-		  }
-			
-		  if(PORTAbits.RA1 == 0 && buzz == 0){ //Decrease the number if the "-" button is pressed
-			 if(!(number[3] == 0 && number[2] == 0 && number[1] == 0 && number[0] == 0)) number[0]--;
-		     if(buzz_en == 1) LATA = 0b00100000;
-		     buzz = 1;
+		  if(PORTAbits.RA0 == 0){
+			if(deep_sleep == 1){
+				deep_sleep = 0;
+			} else {
+				if(clock_mode == 4 && pause == 1) clock_mode = 1;
+				pause = 0;
+			}
+		  }			
+		  if(PORTAbits.RA1 == 0){
+			if(deep_sleep == 1){
+				deep_sleep = 0;
+			} else pause = 1;
 		  }	
+          INTCONbits.RABIF = 0;			//Clear RAB Interrupt Flag 
+    } 
 
-		  for(i=0; i<4;i++){ //In case a number gets higher than 9
-			if(number[i]>9){
-				number[i+1]++;
-				number[i] = 0;
-			}
-			if(number[i]<0){ //In case a number gets lower than 0
-				number[i+1]--;
-				number[i] = 9;
-			}
-		  }
-          INTCONbits.RABIF = 0;	//Clear RAB Interrupt Flag 
-
-		//Note: We also use "buzz" variable as a anti-bounce software method, as we only read the bottons every buzzer_time timer0 events.
-      }
-
-	deep_sleep++;  //We increase time before sleep
+	if(pause == 1) deep_sleep++;  //We increase time before sleep
+	else deep_sleep = 0;
+	screen_sleep++; //Screen time
 
 	if (deep_sleep > sleep_time){ //If the time for sleep has come
 		OSCCONbits.IDLEN = 0; //Prepare the microchip for deep sleep.
-		LATB = 0b00001111; //turn off the display
+		LATB = 0b00000000; //turn off the display
+		LATC = 0b00000000;
+	}
+	if (screen_sleep > screen_time){ //If the time for screen has come
+		screen_mode = 0;
+        clock_mode = 4;
 	}
 }
 
 /* ****************** MAIN ****************** */
-char init = 0;
+char a = 0;
 void main(void)
 {
-	if(init == 0){
+	if(a==0){
+		a = 1;
 		InitOSC();     //Internal OSC 16MHz 
     	Interrupts_enable(); //Enable RA0 & RA1 interrupts
-		TRISB =0; //Set port B as output
-		TRISC =0; //Set port C as output
-		init = 1; //We only run this loop once.
-		OSCCONbits.IDLEN = 1; //We activate idle mode.
+		TRISB =0;
+		TRISC =0;
+		TRISAbits.RA4 = 0;
+		TRISAbits.RA5 = 0;
+		PORTAbits.RA5 = 0;
+		PORTAbits.RA4 = 1;
+		OSCCONbits.IDLEN = 1;
 	}
-	Sleep(); //Sleep either idle or deep mode!  
+	Sleep();
 }
 
  void InitOSC(void) 
  {    
-      OSCCON  = 0b10010110;   //Internal 250KHz    
+      OSCCON  = 0b01010111;   //Internal 16MHz    
  } 
-
  void Interrupts_enable(void) 
  {    
-	TRISA = 0b11001111; //A port as input
-	PORTA = 0;
+	TRISA = 0xFF; //A port as input
     INTCON2bits.RABPU = 0; // Enable Pull-UP on port A-B
     INTCON2bits.RABIP = 1; // Change on port = High priority
-	IOCA  = 0b00000011;        //Enable Interrupt on Change for Pin 4 of Port A 
+	IOCA  = 0b000000011;        //Enable Interrupt on Change for Pin 4 of Port A 
     INTCONbits.RABIE = 1;      //Enable RA and RB Port Change Interrupt 
 
-T0CONbits.T08BIT = 0;	//5ms at 250Khz timer 0 interrupt
-T0CONbits.T0CS = 0;
-T0CONbits.PSA = 1;
-TMR0H = 0xFE;
-TMR0L = 0xC7;
-T0CONbits.TMR0ON = 1;
+	T0CONbits.T08BIT = 0; //16 bit
+	T0CONbits.T0CS = 0; //Internal Instruction Cycle Clock
+	T0CONbits.PSA = 1; 
+
+	T0CONbits.T08BIT = 0;
+	T0CONbits.T0CS = 0;
+	T0CONbits.PSA = 1;
+	TMR0H = 0xFC;
+	TMR0L = 0xAA; 
+	T0CONbits.TMR0ON = 1;
 
 	RCONbits.IPEN       = 1;    //Enable Interrupt Priorities
     INTCONbits.GIEL     = 1;    //Enable Low Priority Interrupt
     INTCONbits.GIEH     = 1;    //Enable high priority interrupts        
     INTCONbits.TMR0IE   = 1;    //Enable Timer0 Interrupt
-	INTCONbits.T0IE     = 1;   
     INTCON2bits.TMR0IP  = 1;    //TMR0 set to low Priority Interrupt
     INTCONbits.TMR0IF = 0;  // T0 int flag bit cleared before starting
     T0CONbits.TMR0ON = 1;   // timer0 START
 	INTCONbits.GIE = 1; 		   //Enable all unmasked interrupts   
  } 
  
- 
+void add_1ms(void){
+char i = 0;
+number[0]++;
+	for(i=0; i<7;i++){
+			if(number[3]>5){
+				number[3] = 0;
+				number[4]++;
+			}
+			if(number[5]>5){
+				number[5] = 0;
+				number[6]++;
+			}
+			if(number[i]>9){
+				number[i+1]++;
+				number[i] = 0;
+			}
+			if(number[i]<0){
+				number[i+1]--;
+				number[i] = 9;
+			}
+	}
+}
 
 
