@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name BytesCounter-rescue)(type Legacy)(uri ${KIPRJMOD}/BytesCounter-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "BytesCounter-rescue")(type "KiCad")(uri "${KIPRJMOD}/BytesCounter-rescue.kicad_sym")(options "")(descr ""))
 )
