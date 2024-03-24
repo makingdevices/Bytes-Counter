@@ -164,6 +164,9 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 
 [PCBWAY](https://www.pcbway.com/) helped us with the fabrication of the PCBs. You can check their quality with the following pictures:
 
+[![PCB Shot 1][pcb_pic1]](https://makingdevices.com/Bytes-Counter)
+[![PCB Shot 2][pcb_pic2]](https://makingdevices.com/Bytes-Counter)
+
 Should you want to colaborate with MakingDevices, you can buy a [BytesCounter fully assembled and ready to use](https://www.pcbway.com/project/gifts_detail/Bytes_Counter_v1_0_4c88cb45.html  )BytesCounter fully assembled and ready to use ;).
 
 
@@ -188,6 +191,8 @@ Should you want to colaborate with MakingDevices, you can buy a [BytesCounter fu
 [sponsor-url]: https://www.pcbway.com/?from=makingdevices
 [sponsor-screenshot]: /images/PCB_sponsor.png
 [product-screenshot]: images/screenshot.jpg
+[pcb_pic1]: images/bytescounter_pcb_1.jpg
+[pcb_pic2]: images/bytescounter_pcb_2.jpg
 [PIC]: https://img.shields.io/badge/PIC18LF14K50-000000?style=for-the-badge
 [PIC-url]: http://ww1.microchip.com/downloads/en/devicedoc/40001350f.pdf
 [kicad-shield]: https://img.shields.io/badge/kicad-0b03fc?style=for-the-badge&logo=kicad&logoColor=white
