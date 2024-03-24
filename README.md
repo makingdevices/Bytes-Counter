@@ -162,12 +162,12 @@ Other Links: [LinkTree](https://makingdevices.com/links/)
 <!-- Sponsor -->
 ## Sponsor
 
-[PCBWAY](https://www.pcbway.com/) helped us with the fabrication of the PCBs. You can check their quality with the following pictures:
+[PCBWAY](https://www.pcbway.com/?from=makingdevices) helped us with the fabrication of the PCBs. You can check their quality with the following pictures:
 
-[![PCB Shot 1][pcb_pic1]](https://makingdevices.com/Bytes-Counter)
-[![PCB Shot 2][pcb_pic2]](https://makingdevices.com/Bytes-Counter)
+[![PCB Shot 1][pcb_pic1]](https://www.pcbway.com/?from=makingdevices)
+[![PCB Shot 2][pcb_pic2]](https://www.pcbway.com/?from=makingdevices)
 
-Should you want to colaborate with MakingDevices, you can buy a [BytesCounter fully assembled and ready to use](https://www.pcbway.com/project/gifts_detail/Bytes_Counter_v1_0_4c88cb45.html  )BytesCounter fully assembled and ready to use ;).
+Should you want to colaborate with MakingDevices, you can buy a [BytesCounter fully assembled and ready to use](https://www.pcbway.com/project/gifts_detail/Bytes_Counter_v1_0_4c88cb45.html) ;).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
